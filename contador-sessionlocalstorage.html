@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Contador SessionStorage: <span id="val"></span></h1>
+  <script>
+    let n = sessionStorage.getItem('cont') || 0;
+    n++;
+    sessionStorage.setItem('cont', n);
+    document.getElementById('val').innerText = n;
+  </script>
+</body>
+</html>
