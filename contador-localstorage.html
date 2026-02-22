@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Contador LocalStorage: <span id="val"></span></h1>
+  <script>
+    let n = localStorage.getItem('cont') || 0;
+    n++;
+    localStorage.setItem('cont', n);
+    document.getElementById('val').innerText = n;
+  </script>
+</body>
+</html>
